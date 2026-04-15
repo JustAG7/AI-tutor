@@ -1,0 +1,10 @@
+node_modules
+.expo
+dist
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+stitch_ai_english_learning_ui
+*.zip
+workflow.png
+FIGMA_STANDARDIZATION_CHECKLIST.md
