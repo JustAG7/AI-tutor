@@ -341,7 +341,7 @@ function GoalAdjustmentScreen({ onNavigate, onBack }) {
       footerMode="flow"
       footer={
         <>
-          <SecondaryButton label="Back to trends" onPress={() => onNavigate("73_weekly_trends")} />
+          <SecondaryButton label="Back to trends" onPress={onBack} />
           <PrimaryButton label="Motivation settings" onPress={() => onNavigate("80_motivation_settings")} />
         </>
       }
@@ -429,7 +429,7 @@ function ShareMilestoneScreen({ onNavigate, onBack }) {
       footerMode="flow"
       footer={
         <>
-          <SecondaryButton label="Back to progress" onPress={() => onNavigate("71_progress_overview")} />
+          <SecondaryButton label="Go to progress" onPress={() => onNavigate("71_progress_overview")} />
           <PrimaryButton label="Celebrate win" onPress={() => onNavigate("80_motivation_settings")} />
         </>
       }
@@ -455,7 +455,7 @@ function MotivationSettingsScreen({ onNavigate, onBack }) {
       footer={
         <>
           <SecondaryButton label="Goal settings" onPress={() => onNavigate("76_goal_adjustment")} />
-          <PrimaryButton label="Back to progress" onPress={() => onNavigate("71_progress_overview")} />
+          <PrimaryButton label="Go to progress" onPress={() => onNavigate("71_progress_overview")} />
         </>
       }
     >

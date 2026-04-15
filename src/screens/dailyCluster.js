@@ -292,7 +292,7 @@ function RecentWordsTwoScreen({ onNavigate, onBack }) {
 
 function NotificationsEntryScreen({ onNavigate, onBack }) {
   return (
-    <AppScreen footer={<SecondaryButton label="Back home" onPress={() => onNavigate("11_home_dashboard")} />}>
+    <AppScreen footer={<SecondaryButton label="Go home" onPress={() => onNavigate("11_home_dashboard")} />}>
       <DailyTopBar title="Notifications" onBack={onBack} />
       <View style={styles.listCard}>
         <ListRow title="Daily lesson ready" meta="2 min ago" onPress={() => onNavigate("12_today_plan_stack")} />

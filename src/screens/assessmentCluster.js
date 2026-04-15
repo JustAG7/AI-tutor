@@ -477,7 +477,7 @@ function MistakeNotebookScreen({ onNavigate, onBack }) {
       footerMode="flow"
       footer={
         <>
-          <SecondaryButton label="Back home" onPress={() => onNavigate("11_home_dashboard")} />
+          <SecondaryButton label="Go home" onPress={() => onNavigate("11_home_dashboard")} />
           <PrimaryButton label="Retake quiz" onPress={() => onNavigate("70_retake_quiz_flow")} />
         </>
       }

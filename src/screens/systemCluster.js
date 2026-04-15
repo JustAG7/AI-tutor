@@ -119,7 +119,7 @@ function GenericErrorScreen({ onNavigate, onBack }) {
       footer={
         <>
           <SecondaryButton label="Report issue" onPress={() => setToast("Error report prepared")} />
-          <PrimaryButton label="Go back home" onPress={() => onNavigate("11_home_dashboard")} />
+          <PrimaryButton label="Go home" onPress={() => onNavigate("11_home_dashboard")} />
         </>
       }
     >
@@ -265,7 +265,7 @@ function CriticalConfirmScreen({ onNavigate, onBack }) {
       footerMode="flow"
       footer={
         <>
-          <SecondaryButton label="Cancel" onPress={() => onNavigate("11_home_dashboard")} />
+          <SecondaryButton label="Cancel" onPress={onBack} />
           <PrimaryButton
             label="Confirm action"
             onPress={() => {

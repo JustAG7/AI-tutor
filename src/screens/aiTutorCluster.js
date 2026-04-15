@@ -1005,7 +1005,7 @@ function SaveResponseScreen({ onNavigate, onBack }) {
         <>
           <PrimaryButton label="View Notebook" onPress={() => onNavigate("60_chat_history")} />
           <Pressable
-            onPress={() => onNavigate("53_chat_conversation")}
+            onPress={onBack}
             style={({ pressed }) => [styles.textButton, pressed && styles.pressed]}
           >
             <Text style={styles.textButtonLabel}>Back to Session</Text>

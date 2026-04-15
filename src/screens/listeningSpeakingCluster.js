@@ -219,7 +219,7 @@ function SpeakingSummaryScreen({ onNavigate, onBack }) {
     <AppScreen
       footer={
         <>
-          <PrimaryButton label="Back to home" onPress={() => onNavigate("11_home_dashboard")} />
+          <PrimaryButton label="Go home" onPress={() => onNavigate("11_home_dashboard")} />
           <SecondaryButton label="Open tutor" onPress={() => onNavigate("51_ai_tutor_home")} />
         </>
       }

@@ -268,7 +268,7 @@ function PlanComparisonScreen({ onNavigate, onBack }) {
       footerMode="flow"
       footer={
         <>
-          <SecondaryButton label="Back to plans" onPress={() => onNavigate("81_pricing_plans")} />
+          <SecondaryButton label="Back to plans" onPress={onBack} />
           <PrimaryButton label="Checkout" onPress={() => onNavigate("83_checkout_flow")} />
         </>
       }
@@ -296,7 +296,7 @@ function CheckoutScreen({ onNavigate, onBack }) {
       footerMode="flow"
       footer={
         <>
-          <SecondaryButton label="Back to compare" onPress={() => onNavigate("82_plan_comparison")} />
+          <SecondaryButton label="Back to compare" onPress={onBack} />
           <PrimaryButton
             label="Pay now"
             onPress={() => {
@@ -332,7 +332,7 @@ function SuccessStateScreen({ onNavigate, onBack }) {
       footer={
         <>
           <SecondaryButton label="Go to profile" onPress={() => onNavigate("85_profile_overview")} />
-          <PrimaryButton label="Back home" onPress={() => onNavigate("11_home_dashboard")} />
+          <PrimaryButton label="Go home" onPress={() => onNavigate("11_home_dashboard")} />
         </>
       }
     >
@@ -389,7 +389,7 @@ function EditProfileScreen({ onNavigate, onBack }) {
       footerMode="flow"
       footer={
         <>
-          <SecondaryButton label="Cancel" onPress={() => onNavigate("85_profile_overview")} />
+          <SecondaryButton label="Cancel" onPress={onBack} />
           <PrimaryButton
             label="Save changes"
             onPress={() => {
@@ -544,7 +544,7 @@ function PrivacyControlsScreen({ onNavigate, onBack }) {
       footer={
         <>
           <SecondaryButton label="Language" onPress={() => onNavigate("89_language_settings")} />
-          <PrimaryButton label="Back to profile" onPress={() => onNavigate("85_profile_overview")} />
+          <PrimaryButton label="Go to profile" onPress={() => onNavigate("85_profile_overview")} />
         </>
       }
     >
